@@ -8,11 +8,12 @@
                 <form method="POST" action="<c:url value='/reports/update' />">
                     <c:import url="_form.jsp" />
                 </form>
-              </c:when>
-              <c:otherwise>
-                <h2>お探しのデータは見つかりました。</h2>
-              </c:otherwise>
+            </c:when>
+            <c:otherwise>
+                <h2>お探しのデータは見つかりませんでした。</h2>
+            </c:otherwise>
         </c:choose>
+
         <p><a href="<c:url value='/reports/index' />">一覧に戻る</a></p>
     </c:param>
 </c:import>
